@@ -1,0 +1,8 @@
+---
+local_port: 8080
+local_host: 127.0.0.1
+me_algorithm: token_ring
+debug: false
+credentials:
+- alma
+- armud

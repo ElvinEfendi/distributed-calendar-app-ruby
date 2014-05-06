@@ -1,0 +1,21 @@
+1. Edit and set configuration in config.yml
+
+2. To work in a network run:
+ruby calendar_network.rb
+Note that in this mode you will still not be able to add or modify appointments.
+
+3. To fully use the distributed application:
+ruby calendar_network.rb <host of an online node> <port of the same node>
+
+4. If calendar_network program is terminated your node will automatically be logged out from the network 
+
+5. To do operations on appointments run:
+ruby appointments_controller.rb
+If you are not running client your node can still be online and serving to the other nodes in the network
+
+6. Set your preferred mutual exclision algorithm in config.yml
+   me_algorithm: token_ring
+   or
+   me_algorithm: ricart_agrawala
+   
+   REQUIREMENT: every node in the same network has to use same me_algorithm
